@@ -1,0 +1,126 @@
+#logo 
+{
+display: flex;
+align-items: center;
+border-bottom: black solid;
+background-color: black;
+padding-left: 20px;
+}
+
+#logo img
+{
+    height: 10%;
+    width: 10%;
+}
+
+h1
+{
+    color: white;
+    font-size: 3em;
+    margin-left: 33%;
+}
+#diaporama
+{
+    position: relative;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.slides
+{
+    display: flex ;
+    height: 100%;
+    width:auto;
+    animation: glisse 20s infinite; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.slide
+{
+    width: 100%;
+    float: left;    
+}
+
+.slide img
+{
+    height: 80%;
+    width: max-content;
+}
+
+.infos_diapo
+{
+    position: absolute;
+    top: 50%;
+    color: blue;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.fa-chevron-left, .fa-chevron-right
+{
+    position : absolute;
+    top : 45%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2.5em;
+}
+
+.fa-chevron-right
+{
+    right: -1%;
+    border-radius: 50% 0 0 50%;
+    border: black solid ;
+    padding: 10px;
+}
+							
+.fa-chevron-left
+{
+    left: -1%;
+    border-radius: 0 50% 50% 0;
+    border: black solid ;
+    padding: 10px;
+}
+
+@keyframes glisse 
+{
+    0% 
+    {
+        transform: translateX(0);
+    }
+
+    33% 
+    {
+        transform: translateX(-1000px);
+    }
+
+    66% 
+    {
+        transform: translateX(-1500px);
+    }
+
+    100% 
+    {
+        transform: translateX(-2000px);
+    }
+}
+
+#tableau
+{
+    position: relative;
+    margin-left: 70%;
+    margin-top: -47%;
+}
+
+#tableau ul
+{
+    list-style-type: none;
+}
+
+#tableau li
+{
+    margin: 10%;
+    border-bottom: black solid 1px;
+    padding-bottom: 10%;
+}
